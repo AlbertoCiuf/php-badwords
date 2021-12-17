@@ -27,5 +27,15 @@ $censoredParagraph = str_replace($bannedWord, '***', $paragraph);
       <?php echo $censoredParagraph ?>
     </span>
   </h2>
+  <h2>
+    Il paragrafo originale è lungo
+    <span style="color: tomato">
+      <?php echo strlen($paragraph) ?>
+    </span>
+    caratteri, mentre quello censurato 
+    <span style="color: tomato">
+      <?php echo strlen($censoredParagraph) ?>
+    </span>.
+  </h2>
 </body>
 </html>
